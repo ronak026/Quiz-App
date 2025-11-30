@@ -81,7 +81,7 @@ def quiz_attempt(request, quiz_id):
             # Create submission with the correct user
             submission = UserSubmission.objects.create(
                 quiz=quiz,
-                user=request.user,                     # ← FIXED
+                user=request.user,    
                 user_name=request.user.username,       # Keep for display if needed
                 score=0,
             )

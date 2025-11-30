@@ -9,7 +9,7 @@
     {% for s in submissions %}
     {% with stats=stats_map|get_item:s.quiz.id %}
     
-    <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
+    <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition mb-6">
         
         <h2 class="text-2xl font-bold text-gray-800 mb-2">
             {{ s.quiz.title }}

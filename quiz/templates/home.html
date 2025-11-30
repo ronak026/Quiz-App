@@ -45,11 +45,13 @@
             Featured Quizzes
         </h2>
 
-        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            {% if quizzes|length == 0 %}
+                <p class="text-gray-500 dark:text-gray-300">No quizzes available.</p>
+            {% endif %} 
             {% for quiz in quizzes %}
             <a href="/quiz/{{ quiz.id }}/"
-               class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md border border-gray-100 dark:border-gray-700 
+               class="bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md border border-gray-100 dark:border-gray-700 
                       hover:shadow-xl hover:-translate-y-2 hover:scale-[1.02] transition transform">
 
                 <h3 class="text-2xl font-bold text-blue-700 dark:text-blue-400">
