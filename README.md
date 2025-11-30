@@ -42,45 +42,39 @@ A modern, feature-rich quiz application built with Django and Tailwind CSS. Crea
 
 ### Home Page
 
-<!-- ![Home Page](screenshots/home.png) -->
+<img width="1757" height="932" alt="Screenshot 2025-11-30 215616" src="https://github.com/user-attachments/assets/c25277ac-0a6c-4f6d-a671-9eceb767b956" />
 
 ### Quiz List
 
-<!-- ![Quiz List](screenshots/quiz-list.png) -->
+<img width="1919" height="930" alt="Screenshot 2025-11-30 215734" src="https://github.com/user-attachments/assets/d27a7a0d-bd70-4a20-8a78-0bdd85282f23" />
 
 ### Quiz Taking Interface
 
-<!-- ![Quiz Interface](screenshots/quiz-interface.png) -->
+<img width="1919" height="931" alt="Screenshot 2025-11-30 215851" src="https://github.com/user-attachments/assets/8e522135-b81b-4b98-a561-363f5002a1b2" />
 
 ### Quiz Results
 
-<!-- ![Quiz Results](screenshots/quiz-results.png) -->
+<img width="1918" height="929" alt="image" src="https://github.com/user-attachments/assets/19997e8d-c2a6-4a81-a57c-012f2ee08935" />
 
 ### Dashboard
 
-<!-- ![Dashboard](screenshots/dashboard.png) -->
+<img width="1919" height="896" alt="Screenshot 2025-11-30 215829" src="https://github.com/user-attachments/assets/67aa68db-cd04-452e-b191-fb0423c5b568" />
 
 ### Events Page
 
-<!-- ![Events](screenshots/events.png) -->
-
-### Dark Mode
-
-<!-- ![Dark Mode](screenshots/dark-mode.png) -->
+<img width="1918" height="931" alt="Screenshot 2025-11-30 220031" src="https://github.com/user-attachments/assets/c35a2409-4784-4e41-82a8-7719eca87f15" />
 
 ### Create Quiz Interface
 
-<!-- ![Create Quiz](screenshots/create-quiz.png) -->
+<img width="1919" height="932" alt="Screenshot 2025-11-30 215943" src="https://github.com/user-attachments/assets/81d96fc0-e25b-4a21-99f3-4ed88adccd9f" />
 
 ### Create Event Interface
 
-<!-- ![Create Event](screenshots/create-event.png) -->
+<img width="1919" height="927" alt="Screenshot 2025-11-30 220002" src="https://github.com/user-attachments/assets/efd4ab04-82a9-4883-86b2-ebb0a2eb5cc2" />
 
 ### Quiz History with Statistics
 
-<!-- ![Quiz History](screenshots/quiz-history.png) -->
-
-> **Note**: Screenshots will be added soon. Create a `screenshots/` folder in the root directory and add your images there.
+<img width="1919" height="931" alt="Screenshot 2025-11-30 221013" src="https://github.com/user-attachments/assets/472b743d-5ec4-42ed-9bbd-90f0de2e0bf3" />
 
 ## Tech Stack
 
