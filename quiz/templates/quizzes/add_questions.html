@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Add Questions{% endblock %}
+
+{% block content %}
+<div class="max-w-3xl mx-auto p-6">
+
+    <h1 class="text-2xl font-bold mb-4">Add Questions to: {{ quiz.title }}</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <label class="font-semibold">Question Text</label>
+        <input name="question_text" class="border px-3 py-2 w-full rounded mb-4" required>
+
+        <label class="font-semibold">Question Type</label>
+        <select name="question_type" id="typeSelect"
+                class="border px-3 py-2 w-full rounded mb-4">
+            <option value="MCQ">Multiple Choice</option>
+            <option value="TEXT">Text Answer</option>
+        </select>
+
+        <div id="mcqSection">
+            <h3 class="font-semibold mb-2">Answers</h3>
+
+            <div id="answers"></div>
+
+            <button type="button" id="addAnswer"
+                    class="bg-gray-200 px-3 py-1 rounded">
+                + Add Answer
+            </button>
+        </div>
+
+        <button class="bg-blue-600 text-white px-4 py-2 rounded mt-4">Save Question</button>
+        <a href="{% url 'dashboard' %}" class="ml-4 text-gray-600">Finish</a>
+    </form>
+
+</div>
+
+<script>
+    let answersDiv = document.getElementById("answers");
+    let addBtn = document.getElementById("addAnswer");
+    let typeSelect = document.getElementById("typeSelect");
+    let mcqSection = document.getElementById("mcqSection");
+
+    function addAnswerField() {
+        const idx = answersDiv.children.length;
+        answersDiv.innerHTML += `
+            <div class="flex gap-2 mb-2">
+                <input type="radio" name="correct_answer" value="${idx}">
+                <input type="text" name="answer_text" class="border px-3 py-2 rounded w-full"
+                       placeholder="Answer text">
+            </div>
+        `;
+    }
+
+    addBtn.onclick = addAnswerField;
+
+    // add 2 default answer fields
+    addAnswerField();
+    addAnswerField();
+
+    // toggle MCQ / TEXT
+    typeSelect.onchange = () => {
+        mcqSection.style.display = typeSelect.value === "MCQ" ? "block" : "none";
+    };
+</script>
+
+{% endblock %}

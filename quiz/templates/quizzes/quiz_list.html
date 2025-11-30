@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Quizzes{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-8 p-6">Available Quizzes</h1>
+
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for quiz in quizzes %}
+    <div class="bg-white shadow rounded-xl p-5 border border-gray-100 hover:shadow-lg transition">
+        <h2 class="text-xl font-semibold">{{ quiz.title }}</h2>
+        <p class="text-gray-600 mt-2">{{ quiz.description|truncatewords:20 }}</p>
+        <a href="{% url 'quiz_attempt' quiz.id %}"
+           class="inline-block mt-4 bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700">
+           Start Quiz
+        </a>
+    </div>
+    {% empty %}
+    <p class="text-gray-500 col-span-full">Empty Quiz.</p>
+    {% endfor %}
+</div>
+
+{% endblock %}

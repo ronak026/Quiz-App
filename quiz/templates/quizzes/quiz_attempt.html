@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% block title %}Attempt Quiz{% endblock %}
+
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-6">{{ quiz.title }}</h1>
+
+<form method="POST" class="space-y-8">
+    {% csrf_token %}
+
+    <!-- ERROR MESSAGE -->
+    {% if error %}
+    <div class="p-4 bg-red-100 border border-red-300 text-red-700 rounded-lg">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <!-- USER NAME -->
+    <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+        <label class="block font-semibold mb-2 text-lg">Your Name</label>
+        {{ form.user_name }}
+    </div>
+
+    <!-- QUESTIONS SECTION -->
+    {% for q in questions %}
+    <div class="bg-white p-6 rounded-xl shadow border border-gray-100">
+        <p class="font-semibold text-lg">{{ forloop.counter }}. {{ q.text }}</p>
+
+        <div class="mt-4 space-y-2">
+
+            {% if q.question_type == "MCQ" %}
+                {% for a in q.answers.all %}
+                <label class="flex items-center space-x-3 cursor-pointer">
+                    <input type="radio"
+                        name="question_{{ q.id }}"
+                        value="{{ a.id }}"
+                        class="w-4 h-4 text-blue-600 focus:ring-blue-500">
+                    <span>{{ a.text }}</span>
+                </label>
+                {% endfor %}
+
+            {% else %}
+                <textarea 
+                    name="question_{{ q.id }}" 
+                    class="w-full border-gray-300 rounded-lg p-3 shadow-sm focus:ring-blue-500 focus:border-blue-500"
+                    placeholder="Type your answer here..."></textarea>
+            {% endif %}
+
+        </div>
+    </div>
+    {% endfor %}
+
+    <!-- SUBMIT BUTTON -->
+    <button
+        class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+        Submit Quiz
+    </button>
+
+</form>
+
+{% endblock %}

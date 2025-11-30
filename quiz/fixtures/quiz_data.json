@@ -1,0 +1,4702 @@
+[
+  {
+    "model": "quiz.quiz",
+    "pk": 1,
+    "fields": {
+      "title": "Quick General Knowledge Quiz",
+      "description": "A general knowledge quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 1,
+    "fields": {
+      "quiz": 1,
+      "text": "What is the chemical symbol for gold?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "text": "Go",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "text": "Ag",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "text": "Gd",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "text": "Au",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 2,
+    "fields": {
+      "quiz": 1,
+      "text": "Which planet in our solar system has the most moons (as of 2024)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 5,
+    "fields": {
+      "question": 2,
+      "text": "Earth",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 6,
+    "fields": {
+      "question": 2,
+      "text": "Mars",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 7,
+    "fields": {
+      "question": 2,
+      "text": "Saturn",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 8,
+    "fields": {
+      "question": 2,
+      "text": "Jupiter",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 3,
+    "fields": {
+      "quiz": 1,
+      "text": "Which language has the most native speakers worldwide?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "text": "English",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 10,
+    "fields": {
+      "question": 3,
+      "text": "Hindi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 11,
+    "fields": {
+      "question": 3,
+      "text": "Spanish",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 12,
+    "fields": {
+      "question": 3,
+      "text": "Mandarin Chinese",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 4,
+    "fields": {
+      "quiz": 1,
+      "text": "Which continent is the Sahara Desert located on?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 13,
+    "fields": {
+      "question": 4,
+      "text": "Asia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 14,
+    "fields": {
+      "question": 4,
+      "text": "Australia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 15,
+    "fields": {
+      "question": 4,
+      "text": "Africa",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 16,
+    "fields": {
+      "question": 4,
+      "text": "South America",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 5,
+    "fields": {
+      "quiz": 1,
+      "text": "What is the capital city of Japan?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 17,
+    "fields": {
+      "question": 5,
+      "text": "Kyoto",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 18,
+    "fields": {
+      "question": 5,
+      "text": "Osaka",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 19,
+    "fields": {
+      "question": 5,
+      "text": "Hiroshima",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 20,
+    "fields": {
+      "question": 5,
+      "text": "Tokyo",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 6,
+    "fields": {
+      "quiz": 1,
+      "text": "Which animal is known as the king of the jungle?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 21,
+    "fields": {
+      "question": 6,
+      "text": "Tiger",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 22,
+    "fields": {
+      "question": 6,
+      "text": "Gorilla",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 23,
+    "fields": {
+      "question": 6,
+      "text": "Elephant",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 24,
+    "fields": {
+      "question": 6,
+      "text": "Lion",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 7,
+    "fields": {
+      "quiz": 1,
+      "text": "Which ocean is the smallest by surface area?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 25,
+    "fields": {
+      "question": 7,
+      "text": "Atlantic Ocean",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 26,
+    "fields": {
+      "question": 7,
+      "text": "Indian Ocean",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 27,
+    "fields": {
+      "question": 7,
+      "text": "Arctic Ocean",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 28,
+    "fields": {
+      "question": 7,
+      "text": "Pacific Ocean",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 8,
+    "fields": {
+      "quiz": 1,
+      "text": "Who painted the Mona Lisa?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 29,
+    "fields": {
+      "question": 8,
+      "text": "Vincent van Gogh",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 30,
+    "fields": {
+      "question": 8,
+      "text": "Michelangelo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 31,
+    "fields": {
+      "question": 8,
+      "text": "Leonardo da Vinci",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 32,
+    "fields": {
+      "question": 8,
+      "text": "Pablo Picasso",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 9,
+    "fields": {
+      "quiz": 1,
+      "text": "What is the tallest mountain in the world above sea level?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 33,
+    "fields": {
+      "question": 9,
+      "text": "Mount Everest",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 34,
+    "fields": {
+      "question": 9,
+      "text": "Kangchenjunga",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 35,
+    "fields": {
+      "question": 9,
+      "text": "K2",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 36,
+    "fields": {
+      "question": 9,
+      "text": "Lhotse",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 10,
+    "fields": {
+      "quiz": 1,
+      "text": "What currency is used in the United Kingdom?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 37,
+    "fields": {
+      "question": 10,
+      "text": "Dollar",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 38,
+    "fields": {
+      "question": 10,
+      "text": "Franc",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 39,
+    "fields": {
+      "question": 10,
+      "text": "Pound sterling",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 40,
+    "fields": {
+      "question": 10,
+      "text": "Euro",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 2,
+    "fields": {
+      "title": "Quick Science Quiz",
+      "description": "A science quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 11,
+    "fields": {
+      "quiz": 2,
+      "text": "What is the process by which plants make food using sunlight?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 41,
+    "fields": {
+      "question": 11,
+      "text": "Fermentation",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 42,
+    "fields": {
+      "question": 11,
+      "text": "Transpiration",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 43,
+    "fields": {
+      "question": 11,
+      "text": "Respiration",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 44,
+    "fields": {
+      "question": 11,
+      "text": "Photosynthesis",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 12,
+    "fields": {
+      "quiz": 2,
+      "text": "What particle has a negative charge?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 45,
+    "fields": {
+      "question": 12,
+      "text": "Electron",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 46,
+    "fields": {
+      "question": 12,
+      "text": "Photon",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 47,
+    "fields": {
+      "question": 12,
+      "text": "Proton",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 48,
+    "fields": {
+      "question": 12,
+      "text": "Neutron",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 13,
+    "fields": {
+      "quiz": 2,
+      "text": "What is the center of an atom called?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 49,
+    "fields": {
+      "question": 13,
+      "text": "Orbital",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 50,
+    "fields": {
+      "question": 13,
+      "text": "Electron cloud",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 51,
+    "fields": {
+      "question": 13,
+      "text": "Proton",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 52,
+    "fields": {
+      "question": 13,
+      "text": "Nucleus",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 14,
+    "fields": {
+      "quiz": 2,
+      "text": "Water boils at what temperature on the Celsius scale?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 53,
+    "fields": {
+      "question": 14,
+      "text": "80",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 54,
+    "fields": {
+      "question": 14,
+      "text": "212",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 55,
+    "fields": {
+      "question": 14,
+      "text": "90",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 56,
+    "fields": {
+      "question": 14,
+      "text": "100",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 15,
+    "fields": {
+      "quiz": 2,
+      "text": "Which organ pumps blood throughout the human body?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 57,
+    "fields": {
+      "question": 15,
+      "text": "Heart",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 58,
+    "fields": {
+      "question": 15,
+      "text": "Lungs",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 59,
+    "fields": {
+      "question": 15,
+      "text": "Kidney",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 60,
+    "fields": {
+      "question": 15,
+      "text": "Liver",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 16,
+    "fields": {
+      "quiz": 2,
+      "text": "What gas do humans exhale as a waste product?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 61,
+    "fields": {
+      "question": 16,
+      "text": "Hydrogen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 62,
+    "fields": {
+      "question": 16,
+      "text": "Carbon dioxide",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 63,
+    "fields": {
+      "question": 16,
+      "text": "Nitrogen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 64,
+    "fields": {
+      "question": 16,
+      "text": "Oxygen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 17,
+    "fields": {
+      "quiz": 2,
+      "text": "What is the chemical formula for table salt?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 65,
+    "fields": {
+      "question": 17,
+      "text": "KCl",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 66,
+    "fields": {
+      "question": 17,
+      "text": "CaCl2",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 67,
+    "fields": {
+      "question": 17,
+      "text": "Na2SO4",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 68,
+    "fields": {
+      "question": 17,
+      "text": "NaCl",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 18,
+    "fields": {
+      "quiz": 2,
+      "text": "Which scientist proposed the three laws of motion?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 69,
+    "fields": {
+      "question": 18,
+      "text": "Albert Einstein",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 70,
+    "fields": {
+      "question": 18,
+      "text": "Niels Bohr",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 71,
+    "fields": {
+      "question": 18,
+      "text": "Isaac Newton",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 72,
+    "fields": {
+      "question": 18,
+      "text": "Galileo Galilei",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 19,
+    "fields": {
+      "quiz": 2,
+      "text": "What is the main gas in Earth's atmosphere?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 73,
+    "fields": {
+      "question": 19,
+      "text": "Argon",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 74,
+    "fields": {
+      "question": 19,
+      "text": "Carbon dioxide",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 75,
+    "fields": {
+      "question": 19,
+      "text": "Oxygen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 76,
+    "fields": {
+      "question": 19,
+      "text": "Nitrogen",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 20,
+    "fields": {
+      "quiz": 2,
+      "text": "What organelle is known as the powerhouse of the cell?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 77,
+    "fields": {
+      "question": 20,
+      "text": "Mitochondrion",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 78,
+    "fields": {
+      "question": 20,
+      "text": "Nucleus",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 79,
+    "fields": {
+      "question": 20,
+      "text": "Ribosome",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 80,
+    "fields": {
+      "question": 20,
+      "text": "Golgi apparatus",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 3,
+    "fields": {
+      "title": "Smart Math Quiz",
+      "description": "A math quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 21,
+    "fields": {
+      "quiz": 3,
+      "text": "What is 12 × 11?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 81,
+    "fields": {
+      "question": 21,
+      "text": "112",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 82,
+    "fields": {
+      "question": 21,
+      "text": "132",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 83,
+    "fields": {
+      "question": 21,
+      "text": "121",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 84,
+    "fields": {
+      "question": 21,
+      "text": "142",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 22,
+    "fields": {
+      "quiz": 3,
+      "text": "What is the value of π (pi) rounded to two decimal places?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 85,
+    "fields": {
+      "question": 22,
+      "text": "3.15",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 86,
+    "fields": {
+      "question": 22,
+      "text": "3.14",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 87,
+    "fields": {
+      "question": 22,
+      "text": "3.41",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 88,
+    "fields": {
+      "question": 22,
+      "text": "2.72",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 23,
+    "fields": {
+      "quiz": 3,
+      "text": "What is 15% of 200?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 89,
+    "fields": {
+      "question": 23,
+      "text": "35",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 90,
+    "fields": {
+      "question": 23,
+      "text": "30",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 91,
+    "fields": {
+      "question": 23,
+      "text": "25",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 92,
+    "fields": {
+      "question": 23,
+      "text": "20",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 24,
+    "fields": {
+      "quiz": 3,
+      "text": "What is the square root of 144?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 93,
+    "fields": {
+      "question": 24,
+      "text": "12",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 94,
+    "fields": {
+      "question": 24,
+      "text": "16",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 95,
+    "fields": {
+      "question": 24,
+      "text": "11",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 96,
+    "fields": {
+      "question": 24,
+      "text": "14",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 25,
+    "fields": {
+      "quiz": 3,
+      "text": "What is the next prime after 7?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 97,
+    "fields": {
+      "question": 25,
+      "text": "9",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 98,
+    "fields": {
+      "question": 25,
+      "text": "11",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 99,
+    "fields": {
+      "question": 25,
+      "text": "13",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 100,
+    "fields": {
+      "question": 25,
+      "text": "10",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 26,
+    "fields": {
+      "quiz": 3,
+      "text": "What is 7 factorial (7!)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 101,
+    "fields": {
+      "question": 26,
+      "text": "720",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 102,
+    "fields": {
+      "question": 26,
+      "text": "40320",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 103,
+    "fields": {
+      "question": 26,
+      "text": "5040",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 104,
+    "fields": {
+      "question": 26,
+      "text": "504",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 27,
+    "fields": {
+      "quiz": 3,
+      "text": "Solve for x: 2x + 6 = 14",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 105,
+    "fields": {
+      "question": 27,
+      "text": "8",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 106,
+    "fields": {
+      "question": 27,
+      "text": "5",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 107,
+    "fields": {
+      "question": 27,
+      "text": "2",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 108,
+    "fields": {
+      "question": 27,
+      "text": "4",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 28,
+    "fields": {
+      "quiz": 3,
+      "text": "What is the decimal for 1/4?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 109,
+    "fields": {
+      "question": 28,
+      "text": "0.2",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 110,
+    "fields": {
+      "question": 28,
+      "text": "0.75",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 111,
+    "fields": {
+      "question": 28,
+      "text": "0.25",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 112,
+    "fields": {
+      "question": 28,
+      "text": "0.5",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 29,
+    "fields": {
+      "quiz": 3,
+      "text": "What is 100 divided by 5?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 113,
+    "fields": {
+      "question": 29,
+      "text": "15",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 114,
+    "fields": {
+      "question": 29,
+      "text": "10",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 115,
+    "fields": {
+      "question": 29,
+      "text": "20",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 116,
+    "fields": {
+      "question": 29,
+      "text": "25",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 30,
+    "fields": {
+      "quiz": 3,
+      "text": "What is 9 squared?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 117,
+    "fields": {
+      "question": 30,
+      "text": "81",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 118,
+    "fields": {
+      "question": 30,
+      "text": "18",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 119,
+    "fields": {
+      "question": 30,
+      "text": "27",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 120,
+    "fields": {
+      "question": 30,
+      "text": "72",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 4,
+    "fields": {
+      "title": "Smart Geography Quiz",
+      "description": "A geography quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 31,
+    "fields": {
+      "quiz": 4,
+      "text": "What is the longest river in the world (commonly cited)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 121,
+    "fields": {
+      "question": 31,
+      "text": "Amazon",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 122,
+    "fields": {
+      "question": 31,
+      "text": "Mississippi",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 123,
+    "fields": {
+      "question": 31,
+      "text": "Nile",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 124,
+    "fields": {
+      "question": 31,
+      "text": "Yangtze",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 32,
+    "fields": {
+      "quiz": 4,
+      "text": "Which country has the largest land area?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 125,
+    "fields": {
+      "question": 32,
+      "text": "Russia",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 126,
+    "fields": {
+      "question": 32,
+      "text": "Canada",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 127,
+    "fields": {
+      "question": 32,
+      "text": "United States",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 128,
+    "fields": {
+      "question": 32,
+      "text": "China",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 33,
+    "fields": {
+      "quiz": 4,
+      "text": "Which US state is known as the 'Sunshine State'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 129,
+    "fields": {
+      "question": 33,
+      "text": "Texas",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 130,
+    "fields": {
+      "question": 33,
+      "text": "Florida",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 131,
+    "fields": {
+      "question": 33,
+      "text": "California",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 132,
+    "fields": {
+      "question": 33,
+      "text": "Arizona",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 34,
+    "fields": {
+      "quiz": 4,
+      "text": "What is the capital of Australia?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 133,
+    "fields": {
+      "question": 34,
+      "text": "Canberra",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 134,
+    "fields": {
+      "question": 34,
+      "text": "Brisbane",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 135,
+    "fields": {
+      "question": 34,
+      "text": "Melbourne",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 136,
+    "fields": {
+      "question": 34,
+      "text": "Sydney",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 35,
+    "fields": {
+      "quiz": 4,
+      "text": "Mount Kilimanjaro is located in which country?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 137,
+    "fields": {
+      "question": 35,
+      "text": "Kenya",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 138,
+    "fields": {
+      "question": 35,
+      "text": "Uganda",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 139,
+    "fields": {
+      "question": 35,
+      "text": "Ethiopia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 140,
+    "fields": {
+      "question": 35,
+      "text": "Tanzania",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 36,
+    "fields": {
+      "quiz": 4,
+      "text": "Which sea lies to the south of Spain?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 141,
+    "fields": {
+      "question": 36,
+      "text": "Black Sea",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 142,
+    "fields": {
+      "question": 36,
+      "text": "Mediterranean Sea",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 143,
+    "fields": {
+      "question": 36,
+      "text": "Baltic Sea",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 144,
+    "fields": {
+      "question": 36,
+      "text": "North Sea",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 37,
+    "fields": {
+      "quiz": 4,
+      "text": "What is the smallest country by land area?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 145,
+    "fields": {
+      "question": 37,
+      "text": "Monaco",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 146,
+    "fields": {
+      "question": 37,
+      "text": "Vatican City",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 147,
+    "fields": {
+      "question": 37,
+      "text": "Nauru",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 148,
+    "fields": {
+      "question": 37,
+      "text": "San Marino",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 38,
+    "fields": {
+      "quiz": 4,
+      "text": "The Great Barrier Reef is off the coast of which country?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 149,
+    "fields": {
+      "question": 38,
+      "text": "Australia",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 150,
+    "fields": {
+      "question": 38,
+      "text": "Indonesia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 151,
+    "fields": {
+      "question": 38,
+      "text": "Philippines",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 152,
+    "fields": {
+      "question": 38,
+      "text": "Fiji",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 39,
+    "fields": {
+      "quiz": 4,
+      "text": "Which desert covers much of northern Africa?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 153,
+    "fields": {
+      "question": 39,
+      "text": "Gobi Desert",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 154,
+    "fields": {
+      "question": 39,
+      "text": "Sahara Desert",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 155,
+    "fields": {
+      "question": 39,
+      "text": "Great Victoria Desert",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 156,
+    "fields": {
+      "question": 39,
+      "text": "Kalahari Desert",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 40,
+    "fields": {
+      "quiz": 4,
+      "text": "Which country is both in Europe and Asia?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 157,
+    "fields": {
+      "question": 40,
+      "text": "Iceland",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 158,
+    "fields": {
+      "question": 40,
+      "text": "Spain",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 159,
+    "fields": {
+      "question": 40,
+      "text": "Ireland",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 160,
+    "fields": {
+      "question": 40,
+      "text": "Turkey",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 5,
+    "fields": {
+      "title": "Flash History Quiz",
+      "description": "A history quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 41,
+    "fields": {
+      "quiz": 5,
+      "text": "Who was the first President of the United States?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 161,
+    "fields": {
+      "question": 41,
+      "text": "John Adams",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 162,
+    "fields": {
+      "question": 41,
+      "text": "Thomas Jefferson",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 163,
+    "fields": {
+      "question": 41,
+      "text": "Abraham Lincoln",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 164,
+    "fields": {
+      "question": 41,
+      "text": "George Washington",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 42,
+    "fields": {
+      "quiz": 5,
+      "text": "In which year did the Berlin Wall fall?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 165,
+    "fields": {
+      "question": 42,
+      "text": "1987",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 166,
+    "fields": {
+      "question": 42,
+      "text": "1989",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 167,
+    "fields": {
+      "question": 42,
+      "text": "1990",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 168,
+    "fields": {
+      "question": 42,
+      "text": "1991",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 43,
+    "fields": {
+      "quiz": 5,
+      "text": "Who discovered America in 1492 (commonly credited)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 169,
+    "fields": {
+      "question": 43,
+      "text": "Amerigo Vespucci",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 170,
+    "fields": {
+      "question": 43,
+      "text": "Christopher Columbus",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 171,
+    "fields": {
+      "question": 43,
+      "text": "Ferdinand Magellan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 172,
+    "fields": {
+      "question": 43,
+      "text": "Leif Erikson",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 44,
+    "fields": {
+      "quiz": 5,
+      "text": "Which empire was ruled by emperors such as Augustus and Nero?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 173,
+    "fields": {
+      "question": 44,
+      "text": "British Empire",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 174,
+    "fields": {
+      "question": 44,
+      "text": "Ottoman Empire",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 175,
+    "fields": {
+      "question": 44,
+      "text": "Mongol Empire",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 176,
+    "fields": {
+      "question": 44,
+      "text": "Roman Empire",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 45,
+    "fields": {
+      "quiz": 5,
+      "text": "Who was known as the Maid of Orléans?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 177,
+    "fields": {
+      "question": 45,
+      "text": "Queen Elizabeth I",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 178,
+    "fields": {
+      "question": 45,
+      "text": "Marie Curie",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 179,
+    "fields": {
+      "question": 45,
+      "text": "Joan of Arc",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 180,
+    "fields": {
+      "question": 45,
+      "text": "Catherine the Great",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 46,
+    "fields": {
+      "quiz": 5,
+      "text": "Which war was fought between the North and South regions in the United States?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 181,
+    "fields": {
+      "question": 46,
+      "text": "War of 1812",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 182,
+    "fields": {
+      "question": 46,
+      "text": "American Civil War",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 183,
+    "fields": {
+      "question": 46,
+      "text": "Revolutionary War",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 184,
+    "fields": {
+      "question": 46,
+      "text": "World War I",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 47,
+    "fields": {
+      "quiz": 5,
+      "text": "Who was the British prime minister during World War II (most associated)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 185,
+    "fields": {
+      "question": 47,
+      "text": "Margaret Thatcher",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 186,
+    "fields": {
+      "question": 47,
+      "text": "Winston Churchill",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 187,
+    "fields": {
+      "question": 47,
+      "text": "Neville Chamberlain",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 188,
+    "fields": {
+      "question": 47,
+      "text": "Clement Attlee",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 48,
+    "fields": {
+      "quiz": 5,
+      "text": "Which document, signed in 1215, limited the power of the English king?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 189,
+    "fields": {
+      "question": 48,
+      "text": "English Constitution",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 190,
+    "fields": {
+      "question": 48,
+      "text": "Bill of Rights",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 191,
+    "fields": {
+      "question": 48,
+      "text": "Treaty of Versailles",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 192,
+    "fields": {
+      "question": 48,
+      "text": "Magna Carta",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 49,
+    "fields": {
+      "quiz": 5,
+      "text": "Which ancient civilization built the pyramids at Giza?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 193,
+    "fields": {
+      "question": 49,
+      "text": "Indus Valley Civilization",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 194,
+    "fields": {
+      "question": 49,
+      "text": "Minoans",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 195,
+    "fields": {
+      "question": 49,
+      "text": "Ancient Egyptians",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 196,
+    "fields": {
+      "question": 49,
+      "text": "Mesopotamians",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 50,
+    "fields": {
+      "quiz": 5,
+      "text": "Which year did World War I begin?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 197,
+    "fields": {
+      "question": 50,
+      "text": "1918",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 198,
+    "fields": {
+      "question": 50,
+      "text": "1939",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 199,
+    "fields": {
+      "question": 50,
+      "text": "1905",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 200,
+    "fields": {
+      "question": 50,
+      "text": "1914",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 6,
+    "fields": {
+      "title": "Quick Technology Quiz",
+      "description": "A technology quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 51,
+    "fields": {
+      "quiz": 6,
+      "text": "What does 'HTTP' stand for?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 201,
+    "fields": {
+      "question": 51,
+      "text": "Hyperlink Transfer Protocol",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 202,
+    "fields": {
+      "question": 51,
+      "text": "HyperText Transmission Protocol",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 203,
+    "fields": {
+      "question": 51,
+      "text": "HyperText Transfer Protocol",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 204,
+    "fields": {
+      "question": 51,
+      "text": "High Transfer Text Protocol",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 52,
+    "fields": {
+      "quiz": 6,
+      "text": "What company developed the Android operating system?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 205,
+    "fields": {
+      "question": 52,
+      "text": "Google",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 206,
+    "fields": {
+      "question": 52,
+      "text": "Apple",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 207,
+    "fields": {
+      "question": 52,
+      "text": "IBM",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 208,
+    "fields": {
+      "question": 52,
+      "text": "Microsoft",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 53,
+    "fields": {
+      "quiz": 6,
+      "text": "What does 'CPU' stand for?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 209,
+    "fields": {
+      "question": 53,
+      "text": "Control Processing Unit",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 210,
+    "fields": {
+      "question": 53,
+      "text": "Central Processing Unit",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 211,
+    "fields": {
+      "question": 53,
+      "text": "Central Program Unit",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 212,
+    "fields": {
+      "question": 53,
+      "text": "Computer Processing Unit",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 54,
+    "fields": {
+      "quiz": 6,
+      "text": "Which language is primarily used for styling web pages?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 213,
+    "fields": {
+      "question": 54,
+      "text": "CSS",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 214,
+    "fields": {
+      "question": 54,
+      "text": "HTML",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 215,
+    "fields": {
+      "question": 54,
+      "text": "Python",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 216,
+    "fields": {
+      "question": 54,
+      "text": "JavaScript",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 55,
+    "fields": {
+      "quiz": 6,
+      "text": "What year was the first iPhone released?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 217,
+    "fields": {
+      "question": 55,
+      "text": "2007",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 218,
+    "fields": {
+      "question": 55,
+      "text": "2005",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 219,
+    "fields": {
+      "question": 55,
+      "text": "2008",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 220,
+    "fields": {
+      "question": 55,
+      "text": "2006",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 56,
+    "fields": {
+      "quiz": 6,
+      "text": "Which technology is used to store transactions in a distributed ledger?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 221,
+    "fields": {
+      "question": 56,
+      "text": "Relational Database",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 222,
+    "fields": {
+      "question": 56,
+      "text": "FTP",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 223,
+    "fields": {
+      "question": 56,
+      "text": "SMTP",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 224,
+    "fields": {
+      "question": 56,
+      "text": "Blockchain",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 57,
+    "fields": {
+      "quiz": 6,
+      "text": "What does 'RAM' measure?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 225,
+    "fields": {
+      "question": 57,
+      "text": "Number of processors",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 226,
+    "fields": {
+      "question": 57,
+      "text": "Screen resolution",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 227,
+    "fields": {
+      "question": 57,
+      "text": "Permanent storage",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 228,
+    "fields": {
+      "question": 57,
+      "text": "Temporary memory available to the CPU",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 58,
+    "fields": {
+      "quiz": 6,
+      "text": "Which company created the Windows operating system?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 229,
+    "fields": {
+      "question": 58,
+      "text": "Linux Foundation",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 230,
+    "fields": {
+      "question": 58,
+      "text": "Microsoft",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 231,
+    "fields": {
+      "question": 58,
+      "text": "Google",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 232,
+    "fields": {
+      "question": 58,
+      "text": "Apple",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 59,
+    "fields": {
+      "quiz": 6,
+      "text": "What is open-source software?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 233,
+    "fields": {
+      "question": 59,
+      "text": "Software only available commercially",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 234,
+    "fields": {
+      "question": 59,
+      "text": "Software that runs only on open devices",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 235,
+    "fields": {
+      "question": 59,
+      "text": "Proprietary software",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 236,
+    "fields": {
+      "question": 59,
+      "text": "Software with source code that can be inspected and modified",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 60,
+    "fields": {
+      "quiz": 6,
+      "text": "What does 'AI' stand for in tech?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 237,
+    "fields": {
+      "question": 60,
+      "text": "Analog Input",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 238,
+    "fields": {
+      "question": 60,
+      "text": "Advanced Integration",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 239,
+    "fields": {
+      "question": 60,
+      "text": "Artificial Intelligence",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 240,
+    "fields": {
+      "question": 60,
+      "text": "Automated Interface",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 7,
+    "fields": {
+      "title": "Flash Sports Quiz",
+      "description": "A sports quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 61,
+    "fields": {
+      "quiz": 7,
+      "text": "How many players are on a soccer (football) team on the field per side?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 241,
+    "fields": {
+      "question": 61,
+      "text": "10",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 242,
+    "fields": {
+      "question": 61,
+      "text": "9",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 243,
+    "fields": {
+      "question": 61,
+      "text": "12",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 244,
+    "fields": {
+      "question": 61,
+      "text": "11",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 62,
+    "fields": {
+      "quiz": 7,
+      "text": "Which country won the FIFA World Cup in 2018?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 245,
+    "fields": {
+      "question": 62,
+      "text": "France",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 246,
+    "fields": {
+      "question": 62,
+      "text": "Croatia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 247,
+    "fields": {
+      "question": 62,
+      "text": "Brazil",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 248,
+    "fields": {
+      "question": 62,
+      "text": "Germany",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 63,
+    "fields": {
+      "quiz": 7,
+      "text": "In tennis, what piece of fruit is found at the top of the men's Wimbledon trophy?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 249,
+    "fields": {
+      "question": 63,
+      "text": "Orange",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 250,
+    "fields": {
+      "question": 63,
+      "text": "Pineapple",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 251,
+    "fields": {
+      "question": 63,
+      "text": "Grapes",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 252,
+    "fields": {
+      "question": 63,
+      "text": "Apple",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 64,
+    "fields": {
+      "quiz": 7,
+      "text": "How many minutes are there in a standard professional basketball game (NBA) quarter?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 253,
+    "fields": {
+      "question": 64,
+      "text": "15",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 254,
+    "fields": {
+      "question": 64,
+      "text": "10",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 255,
+    "fields": {
+      "question": 64,
+      "text": "12",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 256,
+    "fields": {
+      "question": 64,
+      "text": "8",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 65,
+    "fields": {
+      "quiz": 7,
+      "text": "Which sport uses the terms 'scrum' and 'try'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 257,
+    "fields": {
+      "question": 65,
+      "text": "Cricket",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 258,
+    "fields": {
+      "question": 65,
+      "text": "Baseball",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 259,
+    "fields": {
+      "question": 65,
+      "text": "Rugby",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 260,
+    "fields": {
+      "question": 65,
+      "text": "Hockey",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 66,
+    "fields": {
+      "quiz": 7,
+      "text": "How many points is a touchdown worth in American football?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 261,
+    "fields": {
+      "question": 66,
+      "text": "1",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 262,
+    "fields": {
+      "question": 66,
+      "text": "3",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 263,
+    "fields": {
+      "question": 66,
+      "text": "7",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 264,
+    "fields": {
+      "question": 66,
+      "text": "6",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 67,
+    "fields": {
+      "quiz": 7,
+      "text": "Which athlete holds the men's 100m world record (as of 2009)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 265,
+    "fields": {
+      "question": 67,
+      "text": "Usain Bolt",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 266,
+    "fields": {
+      "question": 67,
+      "text": "Justin Gatlin",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 267,
+    "fields": {
+      "question": 67,
+      "text": "Tyson Gay",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 268,
+    "fields": {
+      "question": 67,
+      "text": "Yohan Blake",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 68,
+    "fields": {
+      "quiz": 7,
+      "text": "Which country hosts the Tour de France?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 269,
+    "fields": {
+      "question": 68,
+      "text": "Spain",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 270,
+    "fields": {
+      "question": 68,
+      "text": "France",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 271,
+    "fields": {
+      "question": 68,
+      "text": "Italy",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 272,
+    "fields": {
+      "question": 68,
+      "text": "Belgium",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 69,
+    "fields": {
+      "quiz": 7,
+      "text": "What is the national sport of Japan that's similar to wrestling?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 273,
+    "fields": {
+      "question": 69,
+      "text": "Karate",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 274,
+    "fields": {
+      "question": 69,
+      "text": "Judo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 275,
+    "fields": {
+      "question": 69,
+      "text": "Kendo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 276,
+    "fields": {
+      "question": 69,
+      "text": "Sumo",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 70,
+    "fields": {
+      "quiz": 7,
+      "text": "How many holes are there in a standard round of golf?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 277,
+    "fields": {
+      "question": 70,
+      "text": "9",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 278,
+    "fields": {
+      "question": 70,
+      "text": "24",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 279,
+    "fields": {
+      "question": 70,
+      "text": "18",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 280,
+    "fields": {
+      "question": 70,
+      "text": "12",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 8,
+    "fields": {
+      "title": "Brisk Movies Quiz",
+      "description": "A movies quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 71,
+    "fields": {
+      "quiz": 8,
+      "text": "Who directed 'Jurassic Park' (1993)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 281,
+    "fields": {
+      "question": 71,
+      "text": "Steven Spielberg",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 282,
+    "fields": {
+      "question": 71,
+      "text": "Ridley Scott",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 283,
+    "fields": {
+      "question": 71,
+      "text": "Christopher Nolan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 284,
+    "fields": {
+      "question": 71,
+      "text": "James Cameron",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 72,
+    "fields": {
+      "quiz": 8,
+      "text": "Which movie features the character 'Forrest Gump'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 285,
+    "fields": {
+      "question": 72,
+      "text": "Cast Away",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 286,
+    "fields": {
+      "question": 72,
+      "text": "Forrest Gump",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 287,
+    "fields": {
+      "question": 72,
+      "text": "Saving Private Ryan",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 288,
+    "fields": {
+      "question": 72,
+      "text": "The Green Mile",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 73,
+    "fields": {
+      "quiz": 8,
+      "text": "Which fictional spy is also known by the code number 007?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 289,
+    "fields": {
+      "question": 73,
+      "text": "Austin Powers",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 290,
+    "fields": {
+      "question": 73,
+      "text": "James Bond",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 291,
+    "fields": {
+      "question": 73,
+      "text": "Jason Bourne",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 292,
+    "fields": {
+      "question": 73,
+      "text": "Ethan Hunt",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 74,
+    "fields": {
+      "quiz": 8,
+      "text": "Which animated movie features a robot named WALL-E?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 293,
+    "fields": {
+      "question": 74,
+      "text": "Toy Story",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 294,
+    "fields": {
+      "question": 74,
+      "text": "Finding Nemo",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 295,
+    "fields": {
+      "question": 74,
+      "text": "Up",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 296,
+    "fields": {
+      "question": 74,
+      "text": "WALL-E",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 75,
+    "fields": {
+      "quiz": 8,
+      "text": "Which film won the Best Picture Oscar in 1994?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 297,
+    "fields": {
+      "question": 75,
+      "text": "Pulp Fiction",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 298,
+    "fields": {
+      "question": 75,
+      "text": "Four Weddings and a Funeral",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 299,
+    "fields": {
+      "question": 75,
+      "text": "The Shawshank Redemption",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 300,
+    "fields": {
+      "question": 75,
+      "text": "Forrest Gump",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 76,
+    "fields": {
+      "quiz": 8,
+      "text": "Who played the Joker in 'The Dark Knight' (2008)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 301,
+    "fields": {
+      "question": 76,
+      "text": "Joaquin Phoenix",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 302,
+    "fields": {
+      "question": 76,
+      "text": "Jared Leto",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 303,
+    "fields": {
+      "question": 76,
+      "text": "Jack Nicholson",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 304,
+    "fields": {
+      "question": 76,
+      "text": "Heath Ledger",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 77,
+    "fields": {
+      "quiz": 8,
+      "text": "Which movie series features the character 'Darth Vader'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 305,
+    "fields": {
+      "question": 77,
+      "text": "Star Wars",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 306,
+    "fields": {
+      "question": 77,
+      "text": "Guardians of the Galaxy",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 307,
+    "fields": {
+      "question": 77,
+      "text": "Star Trek",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 308,
+    "fields": {
+      "question": 77,
+      "text": "The Matrix",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 78,
+    "fields": {
+      "quiz": 8,
+      "text": "Which actress starred as Katniss Everdeen in 'The Hunger Games'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 309,
+    "fields": {
+      "question": 78,
+      "text": "Scarlett Johansson",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 310,
+    "fields": {
+      "question": 78,
+      "text": "Jennifer Lawrence",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 311,
+    "fields": {
+      "question": 78,
+      "text": "Natalie Portman",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 312,
+    "fields": {
+      "question": 78,
+      "text": "Emma Watson",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 79,
+    "fields": {
+      "quiz": 8,
+      "text": "What is the name of the kingdom where 'Frozen' is set?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 313,
+    "fields": {
+      "question": 79,
+      "text": "Wakanda",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 314,
+    "fields": {
+      "question": 79,
+      "text": "Arendelle",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 315,
+    "fields": {
+      "question": 79,
+      "text": "Hogwarts",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 316,
+    "fields": {
+      "question": 79,
+      "text": "Narnia",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 80,
+    "fields": {
+      "quiz": 8,
+      "text": "Which film features the quote, 'Here's looking at you, kid'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 317,
+    "fields": {
+      "question": 80,
+      "text": "Casablanca",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 318,
+    "fields": {
+      "question": 80,
+      "text": "Gone with the Wind",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 319,
+    "fields": {
+      "question": 80,
+      "text": "Citizen Kane",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 320,
+    "fields": {
+      "question": 80,
+      "text": "The Godfather",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 9,
+    "fields": {
+      "title": "Lightning Programming Quiz",
+      "description": "A programming quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 81,
+    "fields": {
+      "quiz": 9,
+      "text": "Which language is known for its indentation-significant syntax?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 321,
+    "fields": {
+      "question": 81,
+      "text": "Python",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 322,
+    "fields": {
+      "question": 81,
+      "text": "Java",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 323,
+    "fields": {
+      "question": 81,
+      "text": "C++",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 324,
+    "fields": {
+      "question": 81,
+      "text": "Ruby",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 82,
+    "fields": {
+      "quiz": 9,
+      "text": "What does 'HTML' stand for?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 325,
+    "fields": {
+      "question": 82,
+      "text": "HighText Markup Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 326,
+    "fields": {
+      "question": 82,
+      "text": "Hyper Transfer Markup Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 327,
+    "fields": {
+      "question": 82,
+      "text": "HyperText Markup Language",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 328,
+    "fields": {
+      "question": 82,
+      "text": "Hyperlink Text Makeup Language",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 83,
+    "fields": {
+      "quiz": 9,
+      "text": "Which SQL command is used to retrieve data?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 329,
+    "fields": {
+      "question": 83,
+      "text": "DELETE",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 330,
+    "fields": {
+      "question": 83,
+      "text": "UPDATE",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 331,
+    "fields": {
+      "question": 83,
+      "text": "SELECT",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 332,
+    "fields": {
+      "question": 83,
+      "text": "INSERT",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 84,
+    "fields": {
+      "quiz": 9,
+      "text": "Which keyword creates a function in JavaScript?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 333,
+    "fields": {
+      "question": 84,
+      "text": "def",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 334,
+    "fields": {
+      "question": 84,
+      "text": "fn",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 335,
+    "fields": {
+      "question": 84,
+      "text": "function",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 336,
+    "fields": {
+      "question": 84,
+      "text": "func",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 85,
+    "fields": {
+      "quiz": 9,
+      "text": "Which data structure uses LIFO (last in, first out)?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 337,
+    "fields": {
+      "question": 85,
+      "text": "Queue",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 338,
+    "fields": {
+      "question": 85,
+      "text": "Stack",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 339,
+    "fields": {
+      "question": 85,
+      "text": "Array",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 340,
+    "fields": {
+      "question": 85,
+      "text": "Tree",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 86,
+    "fields": {
+      "quiz": 9,
+      "text": "What symbol is used to start a comment in Python?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 341,
+    "fields": {
+      "question": 86,
+      "text": "//",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 342,
+    "fields": {
+      "question": 86,
+      "text": "<!--",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 343,
+    "fields": {
+      "question": 86,
+      "text": "/*",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 344,
+    "fields": {
+      "question": 86,
+      "text": "#",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 87,
+    "fields": {
+      "quiz": 9,
+      "text": "Which protocol is commonly used to transfer files over the internet?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 345,
+    "fields": {
+      "question": 87,
+      "text": "SSH",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 346,
+    "fields": {
+      "question": 87,
+      "text": "SMTP",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 347,
+    "fields": {
+      "question": 87,
+      "text": "FTP",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 348,
+    "fields": {
+      "question": 87,
+      "text": "HTTP",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 88,
+    "fields": {
+      "quiz": 9,
+      "text": "Which language runs in the browser and manipulates the DOM?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 349,
+    "fields": {
+      "question": 88,
+      "text": "Go",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 350,
+    "fields": {
+      "question": 88,
+      "text": "JavaScript",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 351,
+    "fields": {
+      "question": 88,
+      "text": "Rust",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 352,
+    "fields": {
+      "question": 88,
+      "text": "C#",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 89,
+    "fields": {
+      "quiz": 9,
+      "text": "What is the output of print(2 + 3 * 4) in Python?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 353,
+    "fields": {
+      "question": 89,
+      "text": "11",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 354,
+    "fields": {
+      "question": 89,
+      "text": "14",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 355,
+    "fields": {
+      "question": 89,
+      "text": "24",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 356,
+    "fields": {
+      "question": 89,
+      "text": "20",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 90,
+    "fields": {
+      "quiz": 9,
+      "text": "Which version control system is distributed and commonly used?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 357,
+    "fields": {
+      "question": 90,
+      "text": "Mercurial",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 358,
+    "fields": {
+      "question": 90,
+      "text": "CVS",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 359,
+    "fields": {
+      "question": 90,
+      "text": "SVN",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 360,
+    "fields": {
+      "question": 90,
+      "text": "Git",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.quiz",
+    "pk": 10,
+    "fields": {
+      "title": "Lightning Mixed Trivia Quiz",
+      "description": "A mixed trivia quiz.",
+      "created_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 91,
+    "fields": {
+      "quiz": 10,
+      "text": "What color do you get when you mix red and white?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 361,
+    "fields": {
+      "question": 91,
+      "text": "Pink",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 362,
+    "fields": {
+      "question": 91,
+      "text": "Brown",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 363,
+    "fields": {
+      "question": 91,
+      "text": "Orange",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 364,
+    "fields": {
+      "question": 91,
+      "text": "Purple",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 92,
+    "fields": {
+      "quiz": 10,
+      "text": "Which instrument has six strings and is commonly used in rock music?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 365,
+    "fields": {
+      "question": 92,
+      "text": "Guitar",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 366,
+    "fields": {
+      "question": 92,
+      "text": "Piano",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 367,
+    "fields": {
+      "question": 92,
+      "text": "Trumpet",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 368,
+    "fields": {
+      "question": 92,
+      "text": "Violin",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 93,
+    "fields": {
+      "quiz": 10,
+      "text": "How many days are there in a leap year?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 369,
+    "fields": {
+      "question": 93,
+      "text": "366",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 370,
+    "fields": {
+      "question": 93,
+      "text": "360",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 371,
+    "fields": {
+      "question": 93,
+      "text": "364",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 372,
+    "fields": {
+      "question": 93,
+      "text": "365",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 94,
+    "fields": {
+      "quiz": 10,
+      "text": "Which holiday is celebrated on October 31st in many countries?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 373,
+    "fields": {
+      "question": 94,
+      "text": "Easter",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 374,
+    "fields": {
+      "question": 94,
+      "text": "Halloween",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 375,
+    "fields": {
+      "question": 94,
+      "text": "Thanksgiving",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 376,
+    "fields": {
+      "question": 94,
+      "text": "Valentine's Day",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 95,
+    "fields": {
+      "quiz": 10,
+      "text": "Which bird is famous for its talking ability and colorful feathers?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 377,
+    "fields": {
+      "question": 95,
+      "text": "Eagle",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 378,
+    "fields": {
+      "question": 95,
+      "text": "Penguin",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 379,
+    "fields": {
+      "question": 95,
+      "text": "Sparrow",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 380,
+    "fields": {
+      "question": 95,
+      "text": "Parrot",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 96,
+    "fields": {
+      "quiz": 10,
+      "text": "Which element is represented by the symbol 'O'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 381,
+    "fields": {
+      "question": 96,
+      "text": "Gold",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 382,
+    "fields": {
+      "question": 96,
+      "text": "Iron",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 383,
+    "fields": {
+      "question": 96,
+      "text": "Silver",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 384,
+    "fields": {
+      "question": 96,
+      "text": "Oxygen",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 97,
+    "fields": {
+      "quiz": 10,
+      "text": "What do bees collect from flowers to make honey?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 385,
+    "fields": {
+      "question": 97,
+      "text": "Sap",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 386,
+    "fields": {
+      "question": 97,
+      "text": "Pollen",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 387,
+    "fields": {
+      "question": 97,
+      "text": "Nectar",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 388,
+    "fields": {
+      "question": 97,
+      "text": "Water",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 98,
+    "fields": {
+      "quiz": 10,
+      "text": "Which color is created by mixing blue and yellow?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 389,
+    "fields": {
+      "question": 98,
+      "text": "Orange",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 390,
+    "fields": {
+      "question": 98,
+      "text": "Purple",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 391,
+    "fields": {
+      "question": 98,
+      "text": "Brown",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 392,
+    "fields": {
+      "question": 98,
+      "text": "Green",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 99,
+    "fields": {
+      "quiz": 10,
+      "text": "What is the opposite of 'ancient'?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 393,
+    "fields": {
+      "question": 99,
+      "text": "Antique",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 394,
+    "fields": {
+      "question": 99,
+      "text": "Old",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 395,
+    "fields": {
+      "question": 99,
+      "text": "Modern",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 396,
+    "fields": {
+      "question": 99,
+      "text": "Historic",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.question",
+    "pk": 100,
+    "fields": {
+      "quiz": 10,
+      "text": "Which shape has four equal sides and four right angles?",
+      "question_type": "MCQ",
+      "created_at": "2025-01-01T00:00:00Z"
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 397,
+    "fields": {
+      "question": 100,
+      "text": "Rectangle",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 398,
+    "fields": {
+      "question": 100,
+      "text": "Square",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 399,
+    "fields": {
+      "question": 100,
+      "text": "Trapezoid",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "quiz.answer",
+    "pk": 400,
+    "fields": {
+      "question": 100,
+      "text": "Rhombus",
+      "is_correct": false
+    }
+  }
+]

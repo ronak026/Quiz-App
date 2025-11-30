@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static tailwind_tags %}
+{% load static %}
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Quiz App{% endblock %}</title>
+
+    <link rel="stylesheet" href="{% static 'css/tailwind.css' %}">
+    {% tailwind_css %}
+
+    <style>
+        .fade-slide {
+            opacity: 0;
+            animation: fadeSlide 0.8s ease-out forwards;
+        }
+        .fade-slide-delay {
+            opacity: 0;
+            animation: fadeSlide 1s ease-out forwards;
+        }
+        .fade-slide-delay2 {
+            opacity: 0;
+            animation: fadeSlide 1.2s ease-out forwards;
+        }
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .nav-link:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50 fade-slide">
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-3xl font-extrabold text-blue-600 hover:text-blue-500 transition-colors">Quiz App</a>
+            <div class="space-x-6 font-medium text-gray-700 flex items-center">
+                <a href="{% url 'home' %}" class="hover:text-blue-600 transition nav-link">Home</a>
+                {%if user.is_authenticated%}
+                    <a href="{% url 'dashboard' %}" class="hover:text-blue-600 transition nav-link">Dashboard</a>
+                {% endif %}
+                <a href="{% url 'quiz_list' %}" class="hover:text-blue-600 transition nav-link">Quizzes</a>
+                <a href="{% url 'event_list' %}" class="hover:text-blue-600 transition nav-link">Events</a>
+                <a href="{% url 'quiz_history' %}" class="hover:text-blue-600 transition nav-link">History</a>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                    <a href="{% url 'login' %}">Login</a>
+                    <a href="{% url 'register' %}">Register</a>
+{% endif %}
+
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main class="max-w-7xl mx-auto px-6 py-10 fade-slide-delay p-6">
+        {% block content %}{% endblock %}
+    </main>
+
+    {% comment %} <!-- Footer -->
+    <footer class="bg-white border-t mt-12 fade-slide-delay2">
+        <div class="max-w-7xl mx-auto px-6 py-6 text-center text-gray-500 text-sm">
+            &copy; {{ now.year }} Quiz App. All rights reserved.
+        </div>
+    </footer> {% endcomment %}
+
+</body>
+</html>

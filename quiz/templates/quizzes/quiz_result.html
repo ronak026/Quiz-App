@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Quiz Result{% endblock %}
+{% block content %}
+
+<div class="bg-white p-8 shadow rounded-xl max-w-lg mx-auto text-center">
+    <h1 class="text-3xl font-bold mb-4">Your Result</h1>
+
+    <p class="text-lg mb-2"><strong>User:</strong> {{ submission.user_name }}</p>
+    <p class="text-xl font-semibold text-blue-600 mb-4">
+        Score: {{ submission.score }}
+    </p>
+
+    <a href="{% url 'quiz_list' %}" class="text-blue-600 hover:underline">
+        Back to Quizzes
+    </a>
+</div>
+
+{% endblock %}

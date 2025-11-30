@@ -1,0 +1,102 @@
+[
+  {
+    "model": "quiz.Event",
+    "pk": 1,
+    "fields": {
+      "title": "General Knowledge Quiz Night",
+      "description": "Test your knowledge across a wide range of topics in our fun and engaging quiz night!",
+      "date": "2025-12-05",
+      "location": "Community Hall, New York"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 2,
+    "fields": {
+      "title": "Science & Tech Challenge",
+      "description": "A challenging quiz for all science and technology enthusiasts. Compete with participants worldwide.",
+      "date": "2025-12-12",
+      "location": "Online Zoom Event"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 3,
+    "fields": {
+      "title": "History Trivia Marathon",
+      "description": "Dive into history and test your knowledge of world events, famous personalities, and historic dates.",
+      "date": "2025-12-20",
+      "location": "Library Auditorium, Boston"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 4,
+    "fields": {
+      "title": "Math & Logic Quiz Contest",
+      "description": "Solve puzzles and math problems in this fun and brain-stimulating event. Open for all levels.",
+      "date": "2026-01-08",
+      "location": "Tech Hub, San Francisco"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 5,
+    "fields": {
+      "title": "Holiday Special Quiz",
+      "description": "A festive quiz event featuring holiday-themed questions and surprises for all participants.",
+      "date": "2025-12-24",
+      "location": "Online"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 6,
+    "fields": {
+      "title": "Literature & Arts Quiz Evening",
+      "description": "A quiz for literature lovers. Test your knowledge on authors, classics, and famous artworks.",
+      "date": "2026-01-15",
+      "location": "City Library, Chicago"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 7,
+    "fields": {
+      "title": "Music Trivia Night",
+      "description": "Test your knowledge of music genres, artists, and chart-topping hits in a fun evening of music trivia.",
+      "date": "2026-01-22",
+      "location": "Downtown Cafe, Los Angeles"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 8,
+    "fields": {
+      "title": "Movie Buff Challenge",
+      "description": "A quiz event for movie lovers! Guess movies from clips, quotes, and iconic scenes.",
+      "date": "2026-02-05",
+      "location": "Cinema Club, San Diego"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 9,
+    "fields": {
+      "title": "Sports Quiz League",
+      "description": "Compete in sports trivia and test your knowledge of teams, players, and historic matches.",
+      "date": "2026-02-12",
+      "location": "Sports Arena, Miami"
+    }
+  },
+  {
+    "model": "quiz.Event",
+    "pk": 10,
+    "fields": {
+      "title": "Food & Culinary Quiz",
+      "description": "A delicious quiz about cuisines, cooking techniques, and famous chefs.",
+      "date": "2026-02-20",
+      "location": "Gourmet Kitchen, Austin"
+    }
+  }
+]

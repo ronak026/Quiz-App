@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+{% block title %}Dashboard{% endblock %}
+{% block content %}
+
+<h1 class="text-3xl font-bold mb-8 text-primary p-4">Your Dashboard</h1>
+
+<!-- Create Buttons -->
+<div class="flex gap-6 mb-8 p-4">
+    <a href="{% url 'create_quiz' %}" 
+       class="bg-green-600 text-white px-4 py-2 rounded-xl shadow hover:bg-primary-dark transition">
+        + Create Quiz
+    </a>
+
+    <a href="{% url 'create_event' %}" 
+       class="bg-green-600 text-white px-4 py-2 rounded-xl shadow hover:bg-green-700 transition">
+        + Create Event
+    </a>
+</div>
+
+
+<!-- QUIZZES SECTION -->
+<h2 class="text-2xl font-bold mb-4 p-4">Your Quizzes</h2>
+
+<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+    {% for quiz in quizzes %}
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 
+                hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+
+        <h2 class="text-xl font-bold text-primary mb-2">{{ quiz.title }}</h2>
+        <p class="text-text mb-4">{{ quiz.description }}</p>
+
+        <!-- Metadata -->
+        <div class="text-sm text-gray-500 mt-2">
+            <div class="bg-background px-2 py-1 rounded-lg mb-1">
+                Created: {{ quiz.created_at|date:"F j, Y" }}
+            </div>
+        </div>
+
+    </div>
+    {% empty %}
+    <p class="text-gray-500 col-span-full">You haven't created any quizzes yet.</p>
+    {% endfor %}
+</div>
+
+
+
+<!-- EVENTS SECTION -->
+<h2 class="text-2xl font-bold mt-12 mb-4 p-4">Your Events</h2>
+
+<h2 class="text-2xl font-bold mt-8 mb-4">Your Events</h2>
+<div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {% for event in events %}
+    <div class="bg-white p-6 rounded-xl shadow-md border border-gray-100 hover:shadow-xl hover:scale-105 transform transition-all duration-300">
+        <h3 class="text-xl font-bold mb-2">{{ event.title }}</h3>
+        <p class="text-gray-600 mb-2">{{ event.description }}</p>
+        <p class="text-sm text-gray-500">Date: {{ event.date|date:"F j, Y" }}</p>
+        <p class="text-sm text-gray-500">Location: {{ event.location }}</p>
+    </div>
+    {% empty %}
+    <p class="text-gray-500 col-span-full">No events created yet.</p>
+    {% endfor %}
+</div>
+
+
+
+{% endblock %}
