@@ -1,6 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.db.models import Prefetch
-from .models import Quiz, Question, Answer, UserSubmission, UserAnswer, Event
+from .models import Quiz, Question, Answer, UserSubmission, UserAnswer, Event, UserProfile
 from .forms import QuizSubmissionForm
 from django.db.models import Count, Avg
 from django.contrib.auth import login, logout
@@ -8,10 +8,14 @@ from .forms import RegisterForm
 from django.contrib import messages
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.decorators import login_required
-from .forms import QuizForm, EventForm
+from .forms import QuizForm, EventForm, AddUserForm
 from django.http import JsonResponse
 from django.db import transaction
 import json
+from django.contrib.auth.models import User
+from .decorators import access_required
+from django.contrib.admin.views.decorators import staff_member_required
+from django.http import HttpResponse
 
 # Registration
 def register_view(request):
@@ -33,8 +37,20 @@ def login_view(request):
         if form.is_valid():
             user = form.get_user()
             login(request, user)
+            
+            profile = user.userprofile
+            if profile.access_home:
+                return redirect("home")
+            if profile.access_quiz:
+                return redirect("quiz_list")
+            if profile.access_event:
+                return redirect("event_list")
+            if not (profile.access_home or profile.access_quiz or profile.access_event):
+                logout(request)
+                messages.error(request, "Your account does not have access to any pages. Contact admin.")
+                return HttpResponse("Access Denied Because You Didn't Check Any Pages", status=403)
             messages.success(request, f"Welcome back, {user.username}!")
-            return redirect("dashboard")
+            
     else:
         form = AuthenticationForm()
     return render(request, "auth/login.html", {"form": form})
@@ -48,6 +64,7 @@ def logout_view(request):
 
 
 # Home page view
+@access_required("access_home")
 def home(request):
     quizzes = Quiz.objects.all()[:3]
     events = Event.objects.all()[:3]
@@ -55,11 +72,13 @@ def home(request):
     return render(request, "home.html", context)
 
 # QUIZ LIST
+@access_required("access_quiz")
 def quiz_list(request):
     quizzes = Quiz.objects.all().order_by("-created_at")
     return render(request, "quizzes/quiz_list.html", {"quizzes": quizzes})
 
 # QUIZ ATTEMPT PAGE
+@staff_member_required
 @login_required
 def quiz_attempt(request, quiz_id):
     quiz = get_object_or_404(
@@ -126,6 +145,7 @@ def quiz_attempt(request, quiz_id):
 
 # QUIZ RESULT
 @login_required
+@staff_member_required
 def quiz_result(request, submission_id):
     submission = get_object_or_404(
         UserSubmission.objects.select_related("quiz"),
@@ -140,6 +160,7 @@ def quiz_result(request, submission_id):
 from django.db.models import Count, Avg
 
 @login_required
+@staff_member_required
 def quiz_history(request):
     submissions = (
         UserSubmission.objects
@@ -174,17 +195,20 @@ def quiz_history(request):
 
     
 # EVENTS LIST
+@access_required("access_event")
 def event_list(request):
     events = Event.objects.all().order_by("date")
     return render(request, "events/event_list.html", {"events": events})
 
 # EVENT DETAIL
 @login_required
+@staff_member_required
 def event_detail(request, event_id):
     event = get_object_or_404(Event, id=event_id)
     return render(request, "events/event_detail.html", {"event": event})
 
 @login_required
+@staff_member_required
 def quiz_dashboard(request):
     # Fetch quizzes created by this user
     quizzes = Quiz.objects.filter(created_by=request.user)
@@ -200,6 +224,7 @@ def quiz_dashboard(request):
 
 
 @login_required
+@staff_member_required
 def create_quiz(request):
     if request.method == "POST":
         try:
@@ -259,6 +284,7 @@ def create_quiz(request):
     return render(request, "quizzes/create_quiz.html")
 
 @login_required
+@staff_member_required
 def create_event(request):
     if request.method == "POST":
         form = EventForm(request.POST)
@@ -271,3 +297,35 @@ def create_event(request):
     else:
         form = EventForm()
     return render(request, "events/create_event.html", {"form": form})
+
+def user_list(request):
+    users = User.objects.all()
+    return render(request, "users/user_list.html", {"users": users})
+
+def add_user(request):
+    if request.method == "POST":
+        form = AddUserForm(request.POST)
+        if form.is_valid():
+
+            # CREATE USER
+            user = User.objects.create_user(
+                username=form.cleaned_data["username"],
+                email=form.cleaned_data["email"],
+                password=form.cleaned_data["password"],
+            )
+
+            # CREATE USER PROFILE
+            profile = UserProfile.objects.create(
+                user=user,
+                access_home=form.cleaned_data["access_home"],
+                access_event=form.cleaned_data["access_event"],
+                access_quiz=form.cleaned_data["access_quiz"],
+            )
+            
+            messages.success(request, "User added successfully.")
+            return redirect("user_list")
+    else:
+        form = AddUserForm()
+    
+    return render(request, "users/add_user.html", {"form": form})
+

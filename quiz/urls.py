@@ -8,6 +8,8 @@ urlpatterns = [
     path("register/", views.register_view, name="register"),
     path("login/", views.login_view, name="login"),
     path("logout/", views.logout_view, name="logout"),
+    path("users/", views.user_list, name="user_list"),
+    path("users/add/", views.add_user, name="add_user"),
     
     # Quiz section
     path("quizzes/", views.quiz_list, name="quiz_list"),

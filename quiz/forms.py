@@ -70,3 +70,47 @@ class EventForm(forms.Form):
             "rows": 4
         })
     )
+    
+from django import forms
+from django.contrib.auth.models import User
+
+class AddUserForm(forms.Form):
+    username = forms.CharField(
+        max_length=150,
+        label="Username",
+        widget=forms.TextInput(attrs={
+            "class": "border px-3 py-2 rounded w-full",
+            "placeholder": "Enter username"
+        })
+    )
+    email = forms.EmailField(
+        label="Email",
+        widget=forms.EmailInput(attrs={
+            "class": "border px-3 py-2 rounded w-full",
+            "placeholder": "Enter email"
+        })
+    )
+    password = forms.CharField(
+        label="Password",
+        widget=forms.PasswordInput(attrs={
+            "class": "border px-3 py-2 rounded w-full",
+            "placeholder": "Enter password"
+        })
+    )
+
+    # Page access checkboxes
+    access_home = forms.BooleanField(
+        required=False,
+        label="Home Page",
+        widget=forms.CheckboxInput(attrs={"class": "mr-2"})
+    )
+    access_event = forms.BooleanField(
+        required=False,
+        label="Event Page",
+        widget=forms.CheckboxInput(attrs={"class": "mr-2"})
+    )
+    access_quiz = forms.BooleanField(
+        required=False,
+        label="Quiz Page",
+        widget=forms.CheckboxInput(attrs={"class": "mr-2"})
+    )
